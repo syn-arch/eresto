@@ -1,0 +1,74 @@
+.hero {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.hero.active {
+  opacity: 1;
+}
+
+.overlay {
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.my-color {
+  background-color: #a91d3a;
+}
+
+.my-color:hover {
+  background-color: #801329;
+}
+
+.vh-10 {
+  height: 10vh;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+}
+
+.sosmed {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  display: flex;
+}
+
+.sosmed a {
+  margin: 0 10px;
+}
+
+.hubungi-kami {
+  transition: 0.5s;
+  color: white;
+}
+
+.hubungi-kami:hover {
+  background-color: white;
+  color: black;
+}
+
+.card-img-top {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .sosmed {
+    display: none;
+  }
+
+  .container-navbar {
+    padding: 25px 25px !important;
+    border-radius: 0% !important;
+  }
+}
